@@ -13,8 +13,8 @@ public class ClimbingState : IState
 
     public void Enter()
     {
-        Owner.BodyAnimator.SetBool("Climbing", true);
-        Owner.IKCalibrator.iksToCalibrate[0].solver.locomotion.weight = 0;
+        //Owner.BodyAnimator.SetBool("Climbing", true);
+        //Owner.IKCalibrator.iksToCalibrate[0].solver.locomotion.weight = 0;
         Owner.CharController.enableOverlapRecovery = false;
     }
 
@@ -26,8 +26,8 @@ public class ClimbingState : IState
 
     public void Exit()
     {
-        Owner.BodyAnimator.SetBool("Climbing", false);
-        Owner.IKCalibrator.iksToCalibrate[0].solver.locomotion.weight = 1;
+        //Owner.BodyAnimator.SetBool("Climbing", false);
+        //Owner.IKCalibrator.iksToCalibrate[0].solver.locomotion.weight = 1;
         Owner.CharController.enableOverlapRecovery = true;
     }
 

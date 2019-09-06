@@ -19,7 +19,6 @@ public class KayakState : IState
         Owner.transform.parent = Owner.PaddleManager.transform;
 
         Owner.CharController.enabled = false;
-        Owner.SetIkState(PlayerState.Kayaking);
     }
 
     public void Execute()
@@ -44,8 +43,6 @@ public class KayakState : IState
 
         Owner.transform.position = Owner.PaddleManager.PlayerExit.transform.position - controllerPos;
         Owner.transform.rotation = Owner.PaddleManager.PlayerExit.transform.rotation;
-
-        Owner.SetIkState(PlayerState.Walking);
     }
 
     public void FixedExecute()
