@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
-using RootMotion.FinalIK;
 
 public enum PlayerState
 {
@@ -39,7 +38,6 @@ public class PlayerStatemachine : MonoBehaviour
     [HideInInspector] public Animator BodyAnimator;
     [HideInInspector] public GameObject LeftHandSwimPose, RightHandSwimPose;
     [HideInInspector] public WallDetection Climber;
-    [HideInInspector] public VRIKCalibrationController IKCalibrator;
     #endregion 
 
     #region settings
@@ -72,7 +70,6 @@ public class PlayerStatemachine : MonoBehaviour
         CameraPostProcessing = CamPostProcessing.Instance;
         BodyAnimator = GetComponentInChildren<Animator>();
         Climber = GetComponentInChildren<WallDetection>();
-        IKCalibrator = GetComponent<VRIKCalibrationController>();
         LeftHandSwimPose = LeftHand.transform.GetChild(0).gameObject; LeftHandSwimPose.SetActive(false);
         RightHandSwimPose = RightHand.transform.GetChild(0).gameObject; RightHandSwimPose.SetActive(false);
     }
@@ -133,7 +130,7 @@ public class PlayerStatemachine : MonoBehaviour
             StateMachine.currentState.FixedExecute();
     }
 
-    
+    /*
     public void SetIkState(PlayerState ikState)
     {
         for (int i = 0; i < IKCalibrator.iksToCalibrate.Count; i++)
@@ -144,6 +141,7 @@ public class PlayerStatemachine : MonoBehaviour
                 IKCalibrator.iksToCalibrate[i].enabled = false;
         }        
     }
+    */
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Water"))

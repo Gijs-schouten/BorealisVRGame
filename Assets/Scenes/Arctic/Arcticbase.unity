@@ -191,23 +191,28 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 3b1a574704624cf48a3144c527e63440,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3b1a574704624cf48a3144c527e63440,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3b1a574704624cf48a3144c527e63440,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -492544356875646759, guid: 3b1a574704624cf48a3144c527e63440,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7e9325117d972094eb9f79fe6c2ac77d, type: 2}
+    - target: {fileID: 2811165878118410264, guid: 3b1a574704624cf48a3144c527e63440,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7a32127b41035024383dd68311ddafc9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b1a574704624cf48a3144c527e63440, type: 3}
 --- !u!1 &208967181
@@ -361,7 +366,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
