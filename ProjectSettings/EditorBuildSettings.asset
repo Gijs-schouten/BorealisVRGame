@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hill path.unity
     guid: 25c3a648dad4dab4993e01d767514c35
+  - enabled: 1
+    path: Assets/Scenes/Arctic/ArcticLevel.unity
+    guid: b039fafe25017e74c85c5f29bd9cc9d7
+  - enabled: 1
+    path: Assets/Scenes/Inner Earth/innerearth.unity
+    guid: 9cf2f9fe8608ccb45b7000994a85715a
   m_configObjects: {}
