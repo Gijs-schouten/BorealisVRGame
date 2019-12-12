@@ -9,6 +9,7 @@ TagManager:
   - Ship
   - TwoHandGrab
   - Candle
+  - Scanner
   layers:
   - Default
   - TransparentFX
